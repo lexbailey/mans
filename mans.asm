@@ -26,7 +26,8 @@ myProg:
 	mov esi, handHas	;get string pointer
 	call writeStr		;call nice function
 
-	mov eax, [hand]		;get number in hand
+	xor eax, eax
+	mov al, [hand]		;get number in hand
 	call printNumber	;print it
 
 	call printNewLine	;print a new line
